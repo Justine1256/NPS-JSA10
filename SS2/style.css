@@ -1,21 +1,21 @@
-
 /* 1 */
-nav .menu a{
+nav .menu a {
     position: relative;
     display: inline-block;
     /* padding: 0 30px; */
     margin: 0 30px;
 }
+
 /* 2 */
-nav .menu a:hover{
+nav .menu a:hover {
     color: orange;
 }
 
-nav .menu a:hover::after{
+nav .menu a:hover::after {
     width: 100%;
 }
 
-.max-width .menu{
+.max-width .menu {
     /* width: 300px; */
     /* add vao de them hieu ung */
     line-height: 50px;
@@ -26,7 +26,7 @@ nav .menu a:hover::after{
     align-items: center;
 }
 
-nav .menu a::after{
+nav .menu a::after {
     content: '';
     display: block;
     position: absolute;
@@ -43,7 +43,7 @@ nav .menu a::after{
 
 /* home menu */
 
-.home-menu{
+.home-menu {
     background-image: url('./hero.jpg');
     height: 700px;
     background-size: cover;
@@ -53,22 +53,22 @@ nav .menu a::after{
     z-index: 1;
 }
 
-.max-width .logo img{
+.max-width .logo img {
     height: 80px;
     width: 80px;
 }
 
-nav{
+nav {
     margin-left: 10%;
 }
 
-nav .max-width{
+nav .max-width {
     display: flex;
     justify-content: space-around;
 }
 
 /* thah orange bar */
-.max-width{
+.max-width {
     max-width: 1300px;
     padding: 50px;
     margin: 0 auto;
@@ -76,7 +76,7 @@ nav .max-width{
 
 
 /* 3 */
-.opacity-menu{
+.opacity-menu {
     width: 100%;
     height: 100%;
     background-color: black;
@@ -85,7 +85,7 @@ nav .max-width{
     position: absolute;
 }
 
-.max-width .menu a{
+.max-width .menu a {
     color: white;
     font-family: 'Comissioner', sans-serif;
     font-size: 20px;
@@ -100,7 +100,7 @@ nav .max-width{
 }
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -110,7 +110,7 @@ nav .max-width{
     box-sizing: border-box;
 }
 
-.content-menu{
+.content-menu {
     width: 700px;
     height: 200px;
     margin-left: 10%;
@@ -122,8 +122,8 @@ nav .max-width{
     z-index: 999;
 }
 
-.content-menu .text p{
-    font-family: 'Montserrat', sans-serif;
+.content-menu .text p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 50px;
     font-weight: 150;
     line-height: 60px;
@@ -132,14 +132,14 @@ nav .max-width{
     z-index: 9;
 }
 
-.content-menu .multi-button{
+.content-menu .multi-button {
     width: 320px;
     margin-top: 20px;
     display: flex;
     flex-direction: row;
 }
 
-#button1{
+#button1 {
     color: white;
     background-color: #ffa800;
     border: none;
@@ -153,7 +153,7 @@ nav .max-width{
     width: 50%;
 }
 
-#button2{
+#button2 {
     color: #ffa800;
     background-color: #ffaa0000;
     border: 2px solid #ffa800;
@@ -165,4 +165,17 @@ nav .max-width{
     font-size: 14px;
     border-radius: 50px;
     width: 50%;
+}
+
+
+/* PART 2 */
+.part2-content {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 50;
+    color: rgb(39, 39, 39);
+}
+
+.max-width .title {
+    text-align: center;
+    font-size: 40px;
 }
