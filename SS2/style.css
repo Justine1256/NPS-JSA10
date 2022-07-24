@@ -1,0 +1,15 @@
+
+.home-menu{
+    background-image: url(../);
+    height: 550px;
+    background-size: cover;
+
+    position: ;
+    z-index: 1;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+
+}

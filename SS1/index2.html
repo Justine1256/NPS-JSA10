@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực đơn</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/924/924514.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #57422b;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="http://127.0.0.1:5500/index.html" style="color: white;">TIỆM CÀ PHÊ
+                1986</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" style="color: white;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/index.html"
+                            target="blank" style="color: white;">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://127.0.0.1:5500/index1.html" target="blank"
+                            style="color: white;">Câu chuyện</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://127.0.0.1:5500/index2.html" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            Thực đơn
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/index2.html#" target="blank"
+                                    style="color: rgb(36, 33, 31);">Tất cả</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/index2.html#A" target="blank"
+                                    style="color: rgb(36, 33, 31);">Cà Phê</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/index2.html#B" target="blank"
+                                    style="color: rgb(36, 33, 31);">Trà sữa</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/index2.html#C" target="blank"
+                                    style="color: rgb(36, 33, 31);">Đá xay</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/index2.html#D" target="blank"
+                                    style="color: rgb(36, 33, 31);">Trà trái cây</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/index2.html#E" target="blank"
+                                    style="color: rgb(36, 33, 31);">Bánh ngọt</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"
+                        style=" border-color: rgb(211, 188, 159); color: rgb(255, 255, 255) ; background-color: rgb(155, 133, 109);">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div style="margin: 0px 62px; padding: 0px 15px;">
+        <!-- LIST GROUP  -->
+        <div class="list-group"
+            style="float: left; top: 30px; position: sticky; left: 0px; width: 21%; margin-top: 30px; font-size: 20px; ">
+            <a href="http://127.0.0.1:5500/index2.html#A" class="list-group-item list-group-item-action"
+                style="border: none; border-bottom: 1px solid rgba(0,0,0,.125);">Cà phê</a>
+            <a href="http://127.0.0.1:5500/index2.html#B" class="list-group-item list-group-item-action"
+                style="border: none; border-bottom: 1px solid rgba(0,0,0,.125);">Trà sữa</a>
+            <a href="http://127.0.0.1:5500/index2.html#C" class="list-group-item list-group-item-action"
+                style="border: none; border-bottom: 1px solid rgba(0,0,0,.125);">Đá xay</a>
+            <a href="http://127.0.0.1:5500/index2.html#D" class="list-group-item list-group-item-action"
+                style="border: none; border-bottom: 1px solid rgba(0,0,0,.125);">Trà trái cây</a>
+            <a href="http://127.0.0.1:5500/index2.html#E" class="list-group-item list-group-item-action"
+                style="border: none; border-bottom: 1px solid rgba(0,0,0,.125);">Bánh ngọt</a>
+        </div>
+
+        <div style="padding-left: 25%; ">
+            <!-- CÀ PHÊ -->
+            <H3 style="margin-bottom: 25px; padding-top: 30px;" id="A">CÀ PHÊ</H3>
+            <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-bottom: 30px">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://product.hstatic.net/1000075078/product/ca-phe-den-da_6e25255ae31c4f3bbbb502f77e2c100d_large.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CÀ PHÊ ĐEN</h5>
+                            <p class="card-text">20.000đ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://product.hstatic.net/1000075078/product/ca-phe-sua-da_b00c53d18cd84144a164790323106a2f_large.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CÀ PHÊ SỮA</h5>
+                            <p class="card-text">25.000đ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://product.hstatic.net/1000075078/product/cappuccino_621532_400x400_67c12956866c442585a6d47d0771a978_large.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CAPUCHINO</h5>
+                            <p class="card-text">35.000đ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TRÀ SỮA -->
+            <H3 style="margin-bottom: 25px; padding-top: 30px;" id="B">TRÀ SỮA</H3>
+            <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-bottom: 30px">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://product.hstatic.net/1000075078/product/olong-nuong-tran-chau_017573_400x400_ae76ffea39cd42e4ad8e957678bf4f82_large.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">TRÀ SỮA OLONG NƯỚNG</h5>
+                            <p class="card-text">25.000đ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://product.hstatic.net/1000075078/product/hong-tra-sua-tran-chau_326977_400x400_30c57e67d1104ae4b7313cf5d40f3e87_large.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">HỒNG TRÀ SỮA</h5>
+                            <p class="card-text">30.000đ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://product.hstatic.net/1000075078/product/tra-sua-mac-ca_377522_400x400_123ab6b1593d4e5c83776a54f6862bbd_large.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">TRÀ SỮA MẮC CA</h5>
+                            <p class="card-text">30.000đ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ĐÁ XAY -->
+            <H3 style="margin-bottom: 25px; padding-top: 30px;" id="C">ĐÁ XAY</H3>
+            <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-bottom: 30px">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://product.hstatic.net/1000075078/product/cf-da-xay-_1__158038_400x400_aee86b1c0779491f8c2778ddadf41f15_large.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CÀ PHÊ ĐÁ XAY</h5>
+                            <p class="card-text">30.000đ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://product.hstatic.net/1000075078/product/daovietquat_033985_400x400_20bfc56b971c47dca8734514a4765675_large.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">ĐÀO VIỆT QUẤT ĐÁ XAY</h5>
+                            <p class="card-text">35.000đ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://product.hstatic.net/1000075078/product/matchadaxay_622077_400x400_5c617ff524e64e638ad7c868613a832b_large.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">MATCHA ĐÁ XAY</h5>
+                            <p class="card-text">30.000đ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TRÀ TRÁI CÂY -->
+            <H3 style="margin-bottom: 25px; padding-top: 30px;" id="D">TRÀ TRÁI CÂY</H3>
+            <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-bottom: 30px">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://product.hstatic.net/1000075078/product/tra-nhan-da_484810_400x400_446acb3ad76a48d38a98855cd7be54cd_large.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">TRÀ LONG NHÃN HẠT CHIA</h5>
+                            <p class="card-text">35.000đ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://product.hstatic.net/1000075078/product/tra-dao-cam-xa_668678_400x400_207c526c987c4026877ebae748c62afd_large.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">TRÀ ĐÀO CAM SẢ</h5>
+                            <p class="card-text">30.000đ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://product.hstatic.net/1000075078/product/tra-sen_905594_400x400_c82fd1b3786d45f380cf4c15e9af7ab9_large.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">TRÀ HẠT SEN</h5>
+                            <p class="card-text">35.000đ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BÁNH NGỌT -->
+            <H3 style="margin-bottom: 25px; padding-top: 30px;" id="E">BÁNH NGỌT</H3>
+            <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-bottom: 60px">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://product.hstatic.net/1000075078/product/mousse-gau-chocolate_e25675d96c504dacb88f4e56a54ab48b_large.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">MOUSE GẤU CHOCOLATE</h5>
+                            <p class="card-text">39.000đ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://product.hstatic.net/1000075078/product/mochi-kem-matcha_55f00f62de7d4ab6a45be817fdb41e75_large.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">MOCHI KEM TRÀ XANH</h5>
+                            <p class="card-text">19.000đ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://product.hstatic.net/1000075078/product/5d92fbc79e12b47db8cabbd0_chanh-day_994413_400x400_333c9a63c0f74d41a11333c637127328_large.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">MOUSSE CHANH DÂY</h5>
+                            <p class="card-text">29.000đ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="card" style="background-color: #57422b; color: white; text-align: center; padding-top: 10px;">
+        <h5 class="card-header" style="color: rgb(255, 224, 183);">TIỆM CÀ PHÊ 1986</h5>
+        <div class="card-body">
+            <h5 class="card-title" style="color: antiquewhite;">Địa Chỉ</h5>
+            <p class="card-text">019 lô M1 Chung cư Tôn Thất Thuyết, Phường 1, Quận 4, Thành phố Hồ Chí Minh</p>
+            <h5 class="card-title" style="color: antiquewhite;">Số Điện Thoại</h5>
+            <p class="card-text">070 568 1986</p>
+            <h5 class="card-title" style="color: antiquewhite;">Email</h5>
+            <p class="card-text">tiemcaphe1986@gmail.com</p>
+            <a href="https://www.facebook.com/Tiệm-Cà-Phê-1986-103945751627126" class="btn btn-primary"
+                style=" border-color: rgb(211, 188, 159); color: rgb(255, 255, 255) ; background-color: rgb(155, 133, 109); font-style: inherit;">FACEBOOK</a>
+        </div>
+    </div>
+
+
+
+    <!-- NHÚNG SCRIPT -->
+    <script src="./app.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
