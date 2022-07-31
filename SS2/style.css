@@ -179,3 +179,10 @@ nav .max-width {
     text-align: center;
     font-size: 40px;
 }
+
+.orange-bar hr {
+    border-top: 2px solid #ffa800;
+    max-width: 10%;
+    margin: 20px auto;
+}
+
