@@ -186,3 +186,27 @@ nav .max-width {
     margin: 20px auto;
 }
 
+.paragraph-1{
+    margin-left: 25%;
+}
+
+.part2-icon{
+    width: 70px;
+}
+
+.content-box{
+    padding: 10px;
+    margin-top: 10px;
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+}
+
+.content-box .title {
+    text-align: left;
+    font-size: 25px;
+    font-weight: 350;
+}
+
+
