@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 5</title>
+</head>
+
+<body>
+    <a href="profile.html">Profile</a>
+
+    <script>
+        // var name = 'Quan';
+
+        // Mảng (array)
+        // Mảng là 1 kiểu dữ liệu có thể chứa nhiều kiểu dữ liệu khác nhau
+        var mang = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        // index (key, chỉ số) => vị trí của phần tử trong mảng
+        // value (giá trị) => giá trị của phần tử trong mảng
+        // Một mảng luôn có chỉ số bắt đầu từ 0
+        // VD biến mang: phần tử có chỉ số là 0 là "1"
+        // phần tử có chỉ số là 9 là "10"
+        // Mảng có độ dài là n thì phần tử cuối cùng sẽ có chỉ số là n - 1
+        console.log(mang);
+        console.log(mang[0]);
+        console.log(mang[1]);
+        console.log(mang[9]);
+        console.log("Độ dài của mang là: " + mang.length);
+
+        // Mảng đa chiều (array multidimensional, nested array)
+        var mang2 = [
+            [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+            11,
+            [12, 13, 14, 15, 16, 17, 18, 19,
+                [91, 92, 93, 94, 95, 96, 97, 98, 99, 100]
+            ],
+            [21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
+            [31, 32, 33, 34, 35, 36, 37, 38, 39, 40],
+            [41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+            [51, 52, 53, 54, 55, 56, 57, 58, 59, 60],
+            [61, 62, 63, 64, 65, 66, 67, 68, 69, 70],
+            [71, 72, 73, 74, 75, 76, 77, 78, 79, 80],
+            [81, 82, 83, 84, 85, 86, 87, 88, 89, 90],
+        ];
+        console.log(mang2);
+        console.log(mang2[2][8][9]);
+    </script>
+
+    <script>
+        // Local Storage
+        // Chỉ nhận lưu dữ liệu kiểu chuỗi (string), nếu truyền kiểu dữ liệu khác vào => biến thành string rồi mới lưu
+        // Khi lấy dữ liệu, luôn trả về kiêu chuỗi
+
+        // key: tên của giá trị cần lưu trữ
+        // VD: muốn lưu họ tên vào localStorage thì nên đặt tên key là "fullname"
+        // value: giá trị của key tương ứng
+        // Key không bao giờ trùng nhau
+
+        console.log(localStorage);
+
+        // Thêm dữ liệu vào localStorage: setItem(tên key, giá trị)
+        localStorage.setItem("name", "Quan");
+        localStorage.setItem("age", "20");
+
+        // Lấy dữ liệu từ localStorage: getItem(tên key)
+        console.log(localStorage.getItem("age"));
+        console.log(localStorage.getItem("name"));
+
+        // Xóa dữ liệu từ localStorage: removeItem(tên key)
+        localStorage.removeItem("name");
+        // localStorage.removeItem("age");
+
+        // Xóa toàn bộ dữ liệu từ localStorage: clear()
+        localStorage.clear();
+
+        // JSON.stringify(): chuyển đổi một đối tượng/mảng JavaScript thành chuỗi
+        // JSON.parse(): chuyển đổi một chuỗi thành đối tượng/mảng JavaScript
+        localStorage.setItem("mang", JSON.stringify([1, 2, 3]));
+        var mang = localStorage.getItem("mang");
+        var mangFormatted = JSON.parse(mang);
+        console.log(mangFormatted);
+
+        localStorage.setItem("doiTuong", JSON.stringify({
+            name: "Quan",
+            age: 20,
+            address: "Hà Nội"
+        }));
+        var doiTuong = localStorage.getItem("doiTuong");
+        var doiTuongFormatted = JSON.parse(doiTuong);
+        console.log(doiTuongFormatted);
+
+        // Tạo một nested array (chứa các object thông tin học sinh) chứa thông tin của 3 học sinh, lưu vào LocalStorage, lấy dữ liệu in ra console mảng chứa toàn bộ học sinh + in ra thông tin học sinh thứ 2
+
+        // VD: tên là     "Quan",   "Nam",         "Hồng"
+        // VD: địa chỉ là "Hà Nội", "Hồ Chí Minh", "Hải Phòng"
+        // VD: điểm là    "9",      "8",           "7"
+        // Mỗi học sinh có dạng như sau:
+        //    {
+        //      "name": "Quan",
+        //      "age": 20,
+        //      "address": "Hà Nội",
+        //    }
+
+        // Tạo một mảng chứa các object thông tin học sinh
+        var students = [
+            {
+                name: "Quan",
+                age: 9,
+                address: "Hà Nội"
+            },
+            {
+                name: "Nam",
+                age: 8,
+                address: "HCM"
+            },
+            {
+                name: "Hồng",
+                age: 7,
+                address: "Hải Phòng"
+            },
+        ];
+
+        localStorage.setItem("studentsKey", JSON.stringify(students));
+
+        var studentsInStore = localStorage.getItem("studentsKey");
+        var studentsFormatted = JSON.parse(studentsInStore);
+        console.log(studentsFormatted);
+        console.log(studentsFormatted[1].name);
+        console.log(studentsFormatted[1].age);
+        console.log(studentsFormatted[1].address);
+    </script>
+</body>
+
+</html>
