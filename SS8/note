@@ -1,0 +1,19 @@
+MÔ HÌNH KHÁCH-CHỦ
+máy khách: máy vào trang wb của tôi
+máy chủ: là máy giữ các tài nguyên, chạy chg trình, xử lí thao tác logic. để bảo mật
+
+để giao tiếp giữa client-server: qua giao thức or API (là cơ chế cho phép 2 thành phần phần mềm giao tiếp với nhau bằng một tập hợp các định nghĩa) (công cụ 
+giúp giao tiếp giữa các phần mềm, là tập hợp các định gnhĩa và giao thức [phỉa định nghĩa trước các url])
+
+
+fetch nhận vào 1 chuỗi (tham số) -> lần then thứ nhất: trả về đồng thời chuyển dữ liệu thành dạng mảng bằng JSON() -> then thứ 2: viết các logics
+
+* khi fetch data tù API: load lâu (mạng or server) nên nó sẽ ko đợi dòng fetch load xong, nó sẽ load nhữn gdòng khác trước 
+
+
+casch kiem font:
+- len google font
+- bam vao dau cong cac kieu
+- copy code va paste vao html
+
+* tuần tới sẽ kiểm tra: ES6 (cú pháp khai báo hàm mới, khai báo biến mới), cách làm việc với Array trong JS 
