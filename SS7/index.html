@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 7</title>
+  </head>
+  <body>
+    <!-- Tìm hiểu về ES6 -->
+    <script>
+      /**
+       * Block Scoped
+       * Khai báo biến với từ khóa let, const
+       */
+
+      // Block code là một đoạn code nằm trong cặp ngoặc nhọn { ... }
+      if (true) {
+        // Block scoped tức là có phạm vi nằm trong 1 block code
+
+        // Nên hạn chế sử dụng
+        var a = "Tôi là từ khóa var";
+
+        // let sẽ mang block scoped
+        let b = "Tôi là từ khóa let";
+        // const cũng mang block scoped, nhưng không thể thay đổi giá trị
+        const c = "Tôi là từ khóa const";
+        // c = "Tôi sẽ thay đổi giá trị";
+
+        // function S(v, t) {
+        //   return v * t;
+        // }
+
+        // Nên sử dụng const để tạo hằng số dễ hiểu hơn thay vì số 60
+        // Giả sử ô tô luôn đi với v = 60km/h
+        // Giả sử xe máy thì luôn đi với v = 40km/h
+        // Tình quãng đường 2 xe đi trong 10 tiếng
+        // const VAN_TOC_O_TO = 60;
+        // let oTo = S(VAN_TOC_O_TO, 10);
+        // let xaMay = S(40, 10);
+        // console.log(oTo);
+
+        // console.log(a);
+        // console.log(b);
+        // console.log(c);
+      }
+
+      // Biến a có thể truy cập ở bên ngoài block scoped
+      // console.log(a);
+      // console.log(b);
+
+      // ---------------------------------------------
+      //  Arrow function
+
+      // Function declaration
+      function name(name) {
+        return name;
+      }
+
+      // Function expression
+      const name2 = function (name) {
+        return name;
+      };
+
+      // Arrow function
+      const name3 = (name, age) => name + name;
+      const name4 = (name) => {
+        // Nhiều logic khác
+        return name + name;
+      };
+    </script>
+  </body>
+</html>

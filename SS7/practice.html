@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+  </head>
+  <body>
+    <!-- HTML -->
+    <div>Đây là div</div>
+    <span>Đây là span</span>
+    <a href="https://www.google.com">Đây là đường link</a>
+    <ul id="list" class="listc">
+      <li>Phân tử 1</li>
+      <li>Phân tử 2</li>
+      <li>Phân tử 3</li>
+    </ul>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus quo, ipsa
+      voluptate expedita est aut provident libero totam sit, magni modi
+      consequatur saepe at velit, dolor temporibus voluptas optio molestiae?
+    </p>
+
+    <!-- CSS -->
+    <style>
+      /* Reset style mặc định */
+      * {
+        /* width của một element = nội dung bên trong + padding + border */
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      /* Flexbox
+        - Game https://flexboxfroggy.com/
+      */
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+    </style>
+
+    <!-- Javascript -->
+    <script>
+      // Toán tử +, -, *, /, %, =
+      // So sánh ==, !=, >=, <=, >, <
+
+      // Vòng lặp
+      // Mảng luôn có chỉ số bắt đầu là 0, kết thúc là arr.length - 1
+      let mang = [1, 2, 3, 4, 5];
+      for (
+        let i = 0; // Khởi tạo giá trị cho biến đếm
+        i <= mang.length - 1; // Điều kiện dừng
+        i = i + 1 // Điều kiện tăng
+      ) {
+        // console.log(mang[i]);
+      }
+
+      const a = false;
+      const b = true;
+      const c = true;
+      // Điều kiện
+      if (a) {
+        // Nếu điều kiện a đúng
+      } else {
+        // Nếu điều kiện a ko đúng
+      }
+
+      if (a) {
+        // Nếu điều kiện a đúng
+      } else if (b) {
+        // Nếu điều kiện a ko đúng, b đúng
+      } else if (c) {
+        // Nếu điều kiện a và b ko đúng, c đúng
+      } else {
+        // Nếu điều kiện a, b và c ko đúng
+      }
+
+      if (a == false) {
+        // console.log("Đúng");
+      }
+
+      // Object
+      const obj = {
+        name: "Quân",
+        age: 23,
+        isMarried: false,
+      };
+      obj.isMarried = true;
+
+      // DOM
+      // Cú pháp chọn ra 1 phần tử trong HTML
+      // Selector giống hệt CSS Selectors (https://www.w3schools.com/cssref/css_selectors.asp)
+      // const ul = document.querySelector("ul");
+      // const ul = document.querySelector(".listc");
+      // const ul = document.querySelector("#list");
+      const ul = document.querySelector("ul#list");
+      console.log([ul]);
+
+      // Chọn ra nhiều phần tử
+      const li = document.querySelectorAll("li");
+      console.log(li);
+
+      // Tạo ra element trong JS
+      // <li attr="abc">Text</li>
+      const newLi = document.createElement("li");
+
+      const aEl = document.createElement("a");
+      aEl.href = "https://www.google.com";
+      aEl.textContent = "Chuyển đến google search";
+
+      newLi.appendChild(aEl);
+      ul.appendChild(newLi);
+    </script>
+  </body>
+</html>
