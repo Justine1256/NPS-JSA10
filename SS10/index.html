@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tổng kết</title>
+
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .sp-name {
+                font-size: 24px;
+            }
+
+            .sp-image {
+                width: 100px;
+                height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            // Lesson 1
+            // Github
+            // Cách clone 1 git repo về máy (về local): git clone https://...
+            // Cách đưa code lên github (đưa code lên remote): git add .|*|all|đường-dẫn-file, git commit -m "message", git push origin master|main|...
+            // Update code từ remote về local: git pull origin main (hoặc git fetch origin main)
+
+            // Lesson 2,3,4
+            // Ôn lại về HTML/CSS
+            // Sử dụng open source từ codepen
+
+            // Lesson 5
+            // Local Storage
+            // Lưu vào: localStorage.setItem("tên key", value); (khi lưu array|object thì phải dùng JSON.stringify(value) => localStorage.setItem("tên key", JSON.stringify(value)))
+            // Lấy ra: localStorage.getItem("tên key"); (khi lấy array|object thì cần phải parse bằng JSON.parse => JSON.parse(localStorage.getItem("tên key")))
+            // Xóa: localStorage.removeItem("tên key");
+            // Xóa toàn bộ: localStorage.clear();
+
+            // Lesson 6
+            // Thực hành tạo 1 trang sản phẩm bằng Javascript
+            // Chủ yếu là các thao tác:
+            // tạo element: document.createElement("div|span|...")
+            // render element ra HTML:
+            // + lấy ra 1 element = document.querySelector("css selector tương ứng")|document.getElementBy...
+            // + render html vào trong element vừa lấy ra: element.appendChild(element khác), element.insertAdjacentHTMl("vị trí muốn chèn", "đoạn code html muốn chèn")
+
+            // Lesson 7/8/9
+            // ES6 và các cú pháp mới:
+            // Từ khóa khai báo biến mới: let|const (block scoped)
+            // Cú pháp khai báo hàm mới: () => {}, x => x*x; (x,y) => x + y, ....
+            // Fetch: fetch(api).then((r) => r.json()).then((data) => {...})
+            // async/await để xử lý bất đồng bộ
+
+            // Lesson 6
+            const dssp = [
+                {
+                    name: "SP1",
+                    image: "https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80",
+                },
+                {
+                    name: "SP2",
+                    image: "https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80",
+                },
+            ];
+
+            localStorage.setItem("dssp", JSON.stringify(dssp));
+
+            // ---------------------------------------------------------------------------------
+            const dsspFromLS = JSON.parse(localStorage.getItem("dssp"));
+
+            dsspFromLS.forEach((sp) => {
+                // Logic
+                const spWrapper = document.createElement("div");
+                spWrapper.classList.add("sp-wrapper");
+                const spName = document.createElement("h1");
+                spName.classList.add("sp-name");
+                spName.textContent = sp.name;
+                const spImage = document.createElement("img");
+                spImage.classList.add("sp-image");
+                spImage.src = sp.image;
+                spWrapper.appendChild(spName);
+                spWrapper.appendChild(spImage);
+                const bodyEl = document.querySelector("body");
+                bodyEl.appendChild(spWrapper);
+
+                const html = `
+                    <div class="sp-wrapper">
+                        <h1 class="sp-name">${sp.name}</h1>
+                        <img class="sp-image" src="${sp.image}" />
+                    </div>
+                `;
+
+                document
+                    .querySelector("body")
+                    .insertAdjacentHTML("beforeend", html);
+            });
+        </script>
+
+
+
+<!-- làm sản phẩm cuối khóa từ SS10-SS13, SS13 làm slide thuyết trình
+SS14: demo sản phẩm
+SS15: thuyết trình dự án cuối khóa  -->
+    </body>
+</html>
