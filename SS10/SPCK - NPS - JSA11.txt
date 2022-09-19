@@ -1,0 +1,14 @@
+Nhóm 1: Thùy Anh: trang hướng dẫn làm bí ngô Halloween, bán bí ngô
+Nhóm 2: Ngọc Hà: trang bán hàng
+Nhóm 3: Minh, Xuân Hoàng, Đức Anh: movie
+Nhóm 4: Huy Khánh, Thế Nam
+
+Main topic: Spoky Halloween
+- Trang bán các mặt hàng halloween (đồ decor, poster, ...)
+ + Trang chủ / trang danh sách sản phẩm / trang chi tiết 1 sản phẩm / Trang tìm kiếm / trang giỏ hàng
+
+- Trang landing page: (giới thiệu về ngày lễ Halloween (hơi cùi)), giới thiệu về 1 buổi tiệc halloween, ...
+ + Trang chủ / Trang mua vé|... / Trang chi tiết từng sự kiện trong buổi party|... / Trang xem vé
+
+- Trang xem phim chủ đề Halloween 
+ + Trang chủ / Trang danh sách / Trang xem 1 bộ phim / Trang tìm kiếm

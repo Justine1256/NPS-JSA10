@@ -1,0 +1,12 @@
+nav {
+    z-index: 110;
+    background-color: rgba(0, 0, 0, 0.267);
+}
+
+.carousel slide {
+    z-index: 0;
+}
+
+.carousel-item img {
+height: 700px;
+}
