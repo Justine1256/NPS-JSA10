@@ -69,11 +69,15 @@ nav .menu a::after {
 
 nav {
     margin-left: 10%;
+
 }
 
 nav .max-width {
     display: flex;
     justify-content: space-around;
+    background-color: #ffaa0000;
+    position: fixed;
+    z-index: 999;
 }
 
 /* thah orange bar */
@@ -95,7 +99,7 @@ nav .max-width {
 }
 
 .max-width .menu a {
-    color: rgb(29, 29, 29);
+    color: rgb(255, 255, 255);
     font-family: 'Comissioner', sans-serif;
     font-size: 20px;
     text-decoration: none;
