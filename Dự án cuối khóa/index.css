@@ -8,6 +8,14 @@
     box-sizing: border-box;
 }
 
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: rgb(49, 49, 49);
+    color: rgb(255, 253, 240);
+}
+
 /* 1 */
 nav .menu a {
     position: relative;
@@ -75,8 +83,8 @@ nav {
 nav .max-width {
     display: flex;
     justify-content: space-around;
+    position: absolute;
     background-color: #ffaa0000;
-    position: fixed;
     z-index: 999;
 }
 
@@ -127,19 +135,20 @@ nav .max-width {
 }
 
 .body {
-    margin: 50px 60px;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
 .body .card {
-    margin: 10px 0px;
+    margin: 0px;
+    padding: 20PX;
     border: none;
     border-radius: 0%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: #ffaa0000;
 }
 
 .body .card-img-top {
@@ -163,4 +172,46 @@ nav .max-width {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.body .introduce-card {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.introduce-card > h3 {
+    width: 20%;
+}
+
+.introduce-card > p {
+    width: 65%;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    padding: 60px 60px;
+}
+
+.info , .form {
+    width: 25%;
+    padding: 0px 15px;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact .icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.form-floating mb-3 {
+    background-color: #ffaa0000;
 }
