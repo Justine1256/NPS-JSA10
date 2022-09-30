@@ -212,6 +212,37 @@ nav .max-width {
     margin-right: 8px;
 }
 
-.form-floating mb-3 {
-    background-color: #ffaa0000;
+.form-input >input {
+    color: rgb(255, 253, 240);
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 24px;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 12px;
+    background-color: transparent;
+    border: 1px solid #636363;
+    border-radius: 0;
+    outline: 0;
+}
+
+
+#comment-input {
+    padding: 20px;
+    line-height: inherit;
+}
+
+.form >button {
+    background-color: #e69832;
+    position: relative;
+    display: inline-block;
+    outline: 0;
+    padding: 13px 70px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
