@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#head-img {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
+    width: 100%;
+}
+
+/* PAGE LEFT */
+.page-left {
+    width: 60%;
+    margin-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* MAIN CARD */
+.main-card {
+    margin-bottom: 50px;
+}
+
+.time-and-rate {
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+}
+
+.time-and-rate .icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.time-and-rate >p {
+    margin: 0px;
+}
+
+.main-card .card-body .card-title {
+    font-size: 40px;
+    margin: 0px;
+}
+
+.main-card .card-body .card-text {
+    margin: 10px 0px;
+    line-height: 1.625em;
+    font-size: 18px;
+}
+
+.card-author {
+    display: flex;
+}
+
+.card-author >img {
+    width: 42px;
+    height: 42px;
+}
+
+.card-author .card-details >h6 {
+    display: block;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    color: #060606;
+    letter-spacing: .1em;
+    margin: 0px;
+}
+
+.card-author .card-details >p {
+    position: relative;
+    font-size: 13px;
+    margin: 0;
+    line-height: 1em;
+    color: #7b7b7b;
+}
+
