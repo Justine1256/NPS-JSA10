@@ -46,17 +46,18 @@ body{
 }
 
 .time-and-rate .icon {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     margin-right: 5px;
 }
 
 .time-and-rate >p {
     margin: 0px;
+    font-size: 12px;
 }
 
 .main-card .card-body .card-title {
-    font-size: 40px;
+    font-size: 35px;
     margin: 0px;
 }
 
@@ -68,6 +69,7 @@ body{
 
 .card-author {
     display: flex;
+    margin-top: 22px;
 }
 
 .card-author >img {
@@ -93,3 +95,206 @@ body{
     color: #7b7b7b;
 }
 
+
+/* 2 COlUMN CARD */
+.two-column-card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.two-column-card .card-inner {
+    padding: 0px 15px;
+    margin-bottom: 30px;
+    border-radius: 0px;
+    border: none;
+}
+
+.two-column-card .card-inner >img {
+    border-radius: 0px;
+}
+
+.two-column-card .card-inner .card-body {
+    padding: 0px;
+}
+
+.two-column-card .card-inner .card-body .card-title {
+    font-size: 23px;
+}
+
+.two-column-card .card-inner .card-body .card-text {
+    font-size: 16px;
+}
+
+.card-inner .card-body >a {
+    text-decoration: none;
+    color: #060606;
+    font-size: 12px;
+    display: flex;
+    line-height: 12px;
+}
+
+.card-inner .card-body >a >img {
+    width: 20px;
+    height: 14px;
+    background-color: yellow;
+    padding: 1px 3px 1px 3px;
+}
+
+.card-inner .card-body >a >p {
+    margin: 0px 10px 0px 0px;
+}
+
+
+/* ROW CARD */
+.row-card {
+    width: 100%;
+    padding: 10px 0px 50px;
+}
+
+#poster {
+    margin-bottom: 0px;
+}
+
+#poster >img {
+    max-width: 100%;
+    height: auto;
+}
+
+#poster .card-body {
+    margin-bottom: 50px;
+    padding-top: 30px;
+    background-color: antiquewhite;
+}
+
+#poster .card-body >h5 {
+    color: #060606;
+    font-family: Oswald;
+    font-size: 35px;
+    letter-spacing: 0.075em;
+    font-weight: 600;
+}
+
+#poster .card-body >a {
+    color: #060606;
+    background-color: #FEE86D;
+    font-weight: 700;
+    padding: 20px 40px;
+    width: max-content;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+/* -----TITLE */
+.row-card .title {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.row-card .title >h5 {
+    font-size: 18px;
+    width: 40%;
+    margin: 0px;
+}
+
+.row-card .title >span {
+    width: 100%;
+    height: 7px;
+    border-top: 1px solid #eae9e7;
+    border-bottom: 1px solid #eae9e7;
+}
+
+/* ------INNER */
+.row-card .card-inner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0px 15px;
+    margin-bottom: 30px;
+}
+
+.row-card .card-inner >img {
+    width: 330px;
+    height: 225px;
+}
+
+.row-card .card-inner .card-body {
+    padding-left: 30px;
+    padding-right: 2%;
+    width: 200px;
+}
+
+.row-card .card-inner .card-body .time-and-rate {
+    margin: 0px 0px 8px 0px;
+}
+
+.row-card .card-inner .card-body .card-title {
+    font-size: 23px;
+}
+
+.row-card .card-inner .card-body .card-text {
+    margin: 10px 0px;
+    padding-right: 29px;
+}
+
+.row-card .card-inner .card-body .share-love-icon >div {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 100%;
+    border: 1px solid #eae9e7;
+}
+
+.row-card .card-inner .card-body .share-love-icon >div >img {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* PRODUCTS WE LOVE */
+.product-we-love .title {
+    background-color: #FEE86D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    width: max-content;
+}
+
+.product-we-love .title >img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.product-we-love .title >p {
+    margin: 0px;
+    font-size: 12px;
+}
+
+.product-we-love .products {
+    display: flex;
+    width: 100%;
+    border: 1px solid #b1b1b1;
+    padding: 20px;
+}
+
+.product-we-love .products .card {
+    padding: 0px 28px;
+    border: none;
+    border-right: 1px solid #b1b1b1;
+    border-radius: 0px;
+    word-wrap: normal;
+}
+
+.product-we-love .products .card >div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-we-love .products .card >div >img {
+    width: 90px;
+}
