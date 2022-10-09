@@ -112,6 +112,8 @@ body{
 
 .two-column-card .card-inner >img {
     border-radius: 0px;
+    height: 226PX;
+    width: 322px;
 }
 
 .two-column-card .card-inner .card-body {
@@ -124,9 +126,11 @@ body{
 
 .two-column-card .card-inner .card-body .card-text {
     font-size: 16px;
+    margin: 10px 0px;
 }
 
 .card-inner .card-body >a {
+    margin: 18px 0px 8px;
     text-decoration: none;
     color: #060606;
     font-size: 12px;
@@ -240,12 +244,10 @@ body{
     padding-right: 29px;
 }
 
-.row-card .card-inner .card-body .share-love-icon >div {
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    border-radius: 100%;
-    border: 1px solid #eae9e7;
+.row-card .card-inner .card-body .share-love-icon >img {
+    width: 18px;
+    height: 18px;
+    margin: 10px;
 }
 
 .row-card .card-inner .card-body .share-love-icon >div >img {
@@ -358,13 +360,14 @@ body{
     border-radius: 0%;
 }
 
-/* ABOUT ME */
+/* ABOUT US  */
 .page-right .card >h5 {
     font-size: 12px;
 }
 
 .page-right .card >img {
     width: 138px;
+    border-radius: 100%;
 }
 
 .page-right .card .card-body .card-text {
