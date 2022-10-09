@@ -26,14 +26,6 @@ body {
     width: 100%;
 }
 
-/* PAGE LEFT */
-.page-left {
-    width: 60%;
-    margin-left: 40px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 /* MAIN CARD */
 .main-card {
     margin-bottom: 50px;
