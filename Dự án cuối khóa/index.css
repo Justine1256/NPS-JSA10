@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -48,7 +48,7 @@ nav .menu a:hover::after {
 }
 
 nav .menu a::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     left: 0;
@@ -57,10 +57,9 @@ nav .menu a::after {
     height: 3px;
     background-color: #ffa800;
     -webkit-transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -o-transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-
 
 /* home menu */
 
@@ -80,7 +79,6 @@ nav .menu a::after {
 
 nav {
     margin-left: 10%;
-
 }
 
 nav .max-width {
@@ -98,7 +96,6 @@ nav .max-width {
     margin: 0 auto;
 }
 
-
 /* 3 */
 .opacity-menu {
     width: 100%;
@@ -111,7 +108,7 @@ nav .max-width {
 
 .max-width .menu a {
     color: rgb(255, 255, 255);
-    font-family: 'Comissioner', sans-serif;
+    font-family: "Comissioner", sans-serif;
     font-size: 20px;
     text-decoration: none;
 
@@ -124,7 +121,6 @@ nav .max-width {
     z-index: 9;
 }
 
-
 .content-menu {
     width: 700px;
     height: 200px;
@@ -135,6 +131,15 @@ nav .max-width {
 
     /* noi sau khi opacity */
     z-index: 999;
+}
+
+.logo > a {
+    color: #ffffff;
+}
+
+.logo > a > svg {
+    width: 100px;
+    height: 100px;
 }
 
 /* BODY */
@@ -160,7 +165,6 @@ nav .max-width {
     border-radius: 0px;
 }
 
-
 #blog-card {
     background-color: #292929;
 }
@@ -181,11 +185,11 @@ nav .max-width {
     padding: 0px 15px;
 }
 
-.card-body-elements >img {
+.card-body-elements > img {
     width: 60px;
 }
 
-.card-body-elements >h4 {
+.card-body-elements > h4 {
     font-size: 24px;
     font-weight: 600;
     line-height: 28px;
@@ -193,7 +197,7 @@ nav .max-width {
     margin-bottom: 0px;
 }
 
-.card-body-elements >p {
+.card-body-elements > p {
     margin: 0px;
     color: #808285;
 }
@@ -215,8 +219,8 @@ nav .max-width {
     flex-direction: column;
 }
 
-#shop-card .card-body >p {
-    margin-bottom: 40px; 
+#shop-card .card-body > p {
+    margin-bottom: 40px;
 }
 
 #shopping-icon {
@@ -249,7 +253,8 @@ nav .max-width {
     background-color: #292929;
 }
 
-.info , .form {
+.info,
+.form {
     width: 25%;
     padding: 0px 15px;
 }
@@ -264,7 +269,7 @@ nav .max-width {
     margin-right: 8px;
 }
 
-.form-input >input {
+.form-input > input {
     color: rgb(255, 253, 240);
     width: 100%;
     margin-bottom: 15px;
@@ -278,13 +283,12 @@ nav .max-width {
     outline: 0;
 }
 
-
 #comment-input {
     padding: 20px;
     line-height: inherit;
 }
 
-.form >button {
+.form > button {
     background-color: #e69832;
     position: relative;
     display: inline-block;
