@@ -294,53 +294,22 @@ body{
     border-right: 1px solid #b1b1b1;
     border-radius: 0px;
     word-wrap: normal;
+    height: 100%;
 }
 
 .product-we-love .products .card >div {
     display: flex;
     flex-direction: column;
+    
     align-items: center;
 }
 
 .product-we-love .products .card >div >img {
     width: 90px;
+    transform: rotate(90deg);
+    border-radius: 0px;
 }
 
-
-/* FOOTER CARD */
-.footer-card {
-    width: 100%;
-    background-image: url(https://easymeals.qodeinteractive.com/wp-content/uploads/2020/05/h5-img-15.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 130px 0px 150px;
-}
-
-.footer-card .card-body {
-    margin-left: 50px;
-    width: 40%;
-}
-
-.footer-card .card-body >h2 {
-    color: white;
-    font-size: 35px;
-    font-weight: 400;
-}
-
-.footer-card .card-body >p {
-    color: white;
-    font-size: 18px;
-    margin: 25px 0px 0px;
-}
-
-.footer-card .card-body >div {
-    padding-top: 50px;
-}
-
-.footer-card .card-body >div >img {
-    width: 110px;
-    height: 160px;
-}
 
 
 
@@ -416,7 +385,7 @@ body{
 
 .latest-recipes .card-body {
     text-align: left;
-    padding: 0px 0px 10px 0px;
+    padding: 0px 0px 10px 15px;
 
 }
 
@@ -428,3 +397,7 @@ body{
 .latest-recipes.card-body >p {
     font-size: 13px;
 }
+
+
+
+/* FOOTER */
