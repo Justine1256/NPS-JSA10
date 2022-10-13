@@ -286,6 +286,7 @@ body{
     width: 100%;
     border: 1px solid #b1b1b1;
     padding: 20px;
+    position: unset;
 }
 
 .product-we-love .products .card {
@@ -300,7 +301,7 @@ body{
 .product-we-love .products .card >div {
     display: flex;
     flex-direction: column;
-    
+    height: min-content;
     align-items: center;
 }
 
@@ -308,8 +309,12 @@ body{
     width: 90px;
     transform: rotate(90deg);
     border-radius: 0px;
+    margin-top: 20px;
 }
 
+.product-we-love .products .card >div >h6 {
+    margin-top: 30px;
+}
 
 
 
@@ -364,8 +369,6 @@ body{
 }
 
 /* LATEST RECIPES */
-
-
 .latest-recipes {
     display: flex;
     flex-direction: row;
@@ -385,7 +388,7 @@ body{
 
 .latest-recipes .card-body {
     text-align: left;
-    padding: 0px 0px 10px 15px;
+    padding: 15px 0px 15px 15px;
 
 }
 
@@ -401,3 +404,61 @@ body{
 
 
 /* FOOTER */
+.info, .form {
+    width: 25%;
+    padding: 0px 15px;
+}
+
+.img-footer {
+    width: 25%;
+    padding: 40px;
+}
+
+div.footer{
+    display: flex ;
+    background-color: #7b7b7b;
+    color: white;
+}
+.icon{
+    height: 28px;
+
+}
+.img_nho{
+    height: 90px;
+    width: 90px;
+    padding: 5px;
+}
+
+#img-con1, #img-con2 {
+    padding-bottom: 10px;}
+
+
+.form{ padding: 30px;} .info{ padding: 30px;} .img footer{ padding: 30px;}
+.form-input{
+    padding: 10px 0px;
+}
+
+.form-input >input {
+    color: rgb(255, 253, 240);
+    width: 100%;
+    height: 100%;
+    padding: 10px 24px;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 12px;
+    background-color: transparent;
+    border: 1px solid #636363;
+    border-radius: 0;
+    outline: 0;
+    text-decoration: #eae9e7;
+}
+.submit{
+    color: white;
+    background-color: #f1ad69;
+    border: none;
+    padding: 10px 50px ;
+    justify-content:end;
+}
+a{
+    color: #eae9e7;
+}
