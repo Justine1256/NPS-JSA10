@@ -5,102 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RECIPES</title>
+    <title>Detail</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./index1.css">
 
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/6735/6735172.png">
+
+    <script src="data.js"></script>
+    <script>
+        const params = new Proxy(new URLSearchParams(window.location.search), {
+            get: (searchParams, prop) => searchParams.get(prop),
+        });
+
+        // Get the value of "some_key" in eg "https://example.com/?some_key=some_value"
+        window.type = params.type;
+        window.id = Number(params.id);
+        if (window.type === 'food') {
+            window.data = recipeFood[id];
+        } else {
+            window.data = recipePum[id];
+        }
+
+        document.title = data.name;
+    </script>
 </head>
 
 <body>
     <div id="head-img">
         <!-- Sửa lại title trang -->
-        <h1>RECIPE</h1>
+        <h1 id="title">RECIPE</h1>
     </div>
 
     <!-- PAGE LEFT -->
-    <div class="page-left">
-        <a class="back" href="index.html">Back to home</a>
+    <div class="container">
+        <a class="back" href="index1.html">Back to list</a>
 
         <!-- MAIN CARD -->
-        <div class="main-card col-12" id="first-item"></div>
+        <div class="main-card col-12" id="first-item">
 
-        <!-- 2 COLUMN CARD -->
-        <div class="two-column-card" id="list-food"></div>
-
-
-        <!-- ROW CARD -->
-        <div class="row-card">
-            <!-- POSTER -->
-            <div class="card-inner" id="poster" style="width: 100%;">
-                <img src="https://easymeals.qodeinteractive.com/wp-content/uploads/2020/05/h5-img-22.png"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">FREE RECIPE BOOK!</h5>
-                    <p class="card-text">Get your copy of spicy kitchen feauturing 10 of our most loved, highly-rated
-                        recipes!</p>
-                    <a href="">GET IN NOW</a>
-                </div>
-            </div>
-            <!-- TITLE -->
-            <div class="title">
-                <h5>Ý tưởng <br> trang trí bí ngô 2022</h5>
-                <span></span>
-            </div>
-            <!-- CARDS -->
-            <div id="list-pum"></div>
-        </div>
-    </div>
-
-
-    <!-- PAGE RIGHT -->
-    <div class="page-right">
-        <!-- about me -->
-        <div class="card">
-            <h5>ABOUT US</h5>
-            <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1LzM4NS1mZWxpeC1tZy03ODIxXzEuanBn.jpg"
-                class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Chúng tôi tạo nên những công thức đơn giản, hấp dẫn với chưa đến 10 nguyên liệu,
-                    hoặc chưa đến 30 phút để chuẩn bị</p>
-                <img src="https://easymeals.qodeinteractive.com/wp-content/uploads/2020/05/sidebar-img-2.png" alt="">
-            </div>
-        </div>
-
-        <!-- follow me -->
-        <div class="card" id="follow-me-card">
-            <h5>FOLLOW US</h5>
-            <div class="social-media-icon-list">
-                <a href="">
-                    <img class="follow-me-icon" src="https://cdn-icons-png.flaticon.com/512/717/717392.png"
-                        class="card-img-top" alt="...">
-                </a>
-                <a href="">
-                    <img class="follow-me-icon" src="https://cdn-icons-png.flaticon.com/512/717/717385.png"
-                        class="card-img-top" alt="...">
-                </a>
-                <a href="">
-                    <img class="follow-me-icon" src="https://cdn-icons-png.flaticon.com/512/717/717396.png"
-                        class="card-img-top" alt="...">
-                </a>
-            </div>
-        </div>
-        <!-- catagories -->
-        <div class="catagories">
-            <a href="#">
-                <img src="https://i.pinimg.com/originals/16/d8/f6/16d8f64a88b3ae8fa2b1a89ae7d5efa9.png" alt="">
-            </a>
-            <a href="#">
-                <img src="https://i.pinimg.com/564x/64/af/c0/64afc093dd728a0356078ff1a771a235.jpg" alt="">
-            </a>
-            <a href="#">
-                <img src="https://i.pinimg.com/564x/b6/34/6f/b6346f664b65b5fbaee8d8e1975cedd4.jpg" alt="">
-            </a>
-        </div>
-        <!-- latest recipes -->
-        <div class="card" style="align-items: unset;">
-            <h5>LATEST RECIPES</h5>
-            <div id="latest"></div>
         </div>
     </div>
 
@@ -189,9 +131,35 @@
     </div>
 
     <!-- Nhúng script -->
-    <script src="data.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="index1.js"></script>
+    <script>
+        document.querySelector("#title").innerHTML = data.name;
+        document.querySelector("#first-item").innerHTML = `
+            <div class="main-card col-12 mt-2" id="first-item">
+                <img height="300"
+                    src="${data.image}"
+                    class="card-img-top" alt="..." style="object-fit: cover;">
+                <div class="card-body">
+                    <div class="time-and-rate">
+                        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/3106/3106767.png" alt="">
+                        <p>${data.time}</p>
+                        <img class="icon" style="margin-left: 20px"
+                            src="https://cdn-icons-png.flaticon.com/512/3405/3405355.png" alt="">
+                        <p>${data.level}</p>
+                    </div>
+                    <a class="card-title" href="#">${data.name}</a>
+                    <p class="card-text">${data.desc}</p>
+                    <p class="mt-5">
+                        STEP 1
+                        Heat the oil in a medium pan over a medium heat. Fry the onion and garlic for 8-10 mins until soft. Add the chorizo and fry for 5 mins more. Tip in the tomatoes and sugar, and season. Bring to a simmer, then add the gnocchi and cook for 8 mins, stirring often, until soft. Heat the grill to high.
+                        <br><br>
+                        STEP 2
+                        Stir ¾ of the mozzarella and most of the basil through the gnocchi. Divide the mixture between six ovenproof ramekins, or put in one baking dish. Top with the remaining mozzarella, then grill for 3 mins, or until the cheese is melted and golden. Season, scatter over the remaining basil and serve with green salad.    
+                    </p>
+                </div>
+            </div>
+        `;
+    </script>
 </body>
 
 </html>
